@@ -13,9 +13,15 @@
 		402D015B2897FD80008BEAA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402D01592897FD80008BEAA6 /* Main.storyboard */; };
 		402D015D2897FD81008BEAA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402D015C2897FD81008BEAA6 /* Assets.xcassets */; };
 		402D01602897FD81008BEAA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402D015E2897FD81008BEAA6 /* LaunchScreen.storyboard */; };
+		402D016A28980D85008BEAA6 /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402D016928980D85008BEAA6 /* PayWallViewController.swift */; };
+		402D016C28980F19008BEAA6 /* PayWallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402D016B28980F19008BEAA6 /* PayWallView.swift */; };
+		402D016E28981BCF008BEAA6 /* PayOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402D016D28981BCF008BEAA6 /* PayOptionView.swift */; };
+		E7A263AA0119112049EDEF04 /* Pods_Sport_Center.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45839B8B7642BE7373D82D3 /* Pods_Sport_Center.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DB6C30E2FFE9161FB488327 /* Pods-Sport Center.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sport Center.release.xcconfig"; path = "Target Support Files/Pods-Sport Center/Pods-Sport Center.release.xcconfig"; sourceTree = "<group>"; };
+		127AE2483C8A3DDE6F97535B /* Pods-Sport Center.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sport Center.debug.xcconfig"; path = "Target Support Files/Pods-Sport Center/Pods-Sport Center.debug.xcconfig"; sourceTree = "<group>"; };
 		402D01502897FD80008BEAA6 /* Sport Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sport Center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		402D01532897FD80008BEAA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		402D01552897FD80008BEAA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,11 @@
 		402D015C2897FD81008BEAA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		402D015F2897FD81008BEAA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		402D01612897FD81008BEAA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		402D016728980484008BEAA6 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		402D016928980D85008BEAA6 /* PayWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallViewController.swift; sourceTree = "<group>"; };
+		402D016B28980F19008BEAA6 /* PayWallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallView.swift; sourceTree = "<group>"; };
+		402D016D28981BCF008BEAA6 /* PayOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayOptionView.swift; sourceTree = "<group>"; };
+		C45839B8B7642BE7373D82D3 /* Pods_Sport_Center.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sport_Center.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +42,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A263AA0119112049EDEF04 /* Pods_Sport_Center.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		266F601DDB2EF2B726276DD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C45839B8B7642BE7373D82D3 /* Pods_Sport_Center.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		402D01472897FD80008BEAA6 = {
 			isa = PBXGroup;
 			children = (
+				402D016728980484008BEAA6 /* Configuration.storekit */,
 				402D01522897FD80008BEAA6 /* Sport Center */,
 				402D01512897FD80008BEAA6 /* Products */,
+				9004F5BB306FCB7CD4E05354 /* Pods */,
+				266F601DDB2EF2B726276DD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +79,7 @@
 		402D01522897FD80008BEAA6 /* Sport Center */ = {
 			isa = PBXGroup;
 			children = (
+				402D016828980D6C008BEAA6 /* Paywall */,
 				402D01532897FD80008BEAA6 /* AppDelegate.swift */,
 				402D01552897FD80008BEAA6 /* SceneDelegate.swift */,
 				402D01572897FD80008BEAA6 /* ViewController.swift */,
@@ -67,6 +91,25 @@
 			path = "Sport Center";
 			sourceTree = "<group>";
 		};
+		402D016828980D6C008BEAA6 /* Paywall */ = {
+			isa = PBXGroup;
+			children = (
+				402D016928980D85008BEAA6 /* PayWallViewController.swift */,
+				402D016B28980F19008BEAA6 /* PayWallView.swift */,
+				402D016D28981BCF008BEAA6 /* PayOptionView.swift */,
+			);
+			path = Paywall;
+			sourceTree = "<group>";
+		};
+		9004F5BB306FCB7CD4E05354 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				127AE2483C8A3DDE6F97535B /* Pods-Sport Center.debug.xcconfig */,
+				0DB6C30E2FFE9161FB488327 /* Pods-Sport Center.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 402D01642897FD81008BEAA6 /* Build configuration list for PBXNativeTarget "Sport Center" */;
 			buildPhases = (
+				3D63C4EA653C747DDBD7810F /* [CP] Check Pods Manifest.lock */,
 				402D014C2897FD80008BEAA6 /* Sources */,
 				402D014D2897FD80008BEAA6 /* Frameworks */,
 				402D014E2897FD80008BEAA6 /* Resources */,
+				ED144C01BF2174451F977471 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +178,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D63C4EA653C747DDBD7810F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sport Center-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED144C01BF2174451F977471 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sport Center/Pods-Sport Center-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sport Center/Pods-Sport Center-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sport Center/Pods-Sport Center-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		402D014C2897FD80008BEAA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,7 +227,10 @@
 			files = (
 				402D01582897FD80008BEAA6 /* ViewController.swift in Sources */,
 				402D01542897FD80008BEAA6 /* AppDelegate.swift in Sources */,
+				402D016E28981BCF008BEAA6 /* PayOptionView.swift in Sources */,
+				402D016C28980F19008BEAA6 /* PayWallView.swift in Sources */,
 				402D01562897FD80008BEAA6 /* SceneDelegate.swift in Sources */,
+				402D016A28980D85008BEAA6 /* PayWallViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +372,7 @@
 		};
 		402D01652897FD81008BEAA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127AE2483C8A3DDE6F97535B /* Pods-Sport Center.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +401,7 @@
 		};
 		402D01662897FD81008BEAA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DB6C30E2FFE9161FB488327 /* Pods-Sport Center.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

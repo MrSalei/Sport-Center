@@ -1,0 +1,16 @@
+PODS:
+  - Adapty (1.17.7)
+
+DEPENDENCIES:
+  - Adapty
+
+SPEC REPOS:
+  trunk:
+    - Adapty
+
+SPEC CHECKSUMS:
+  Adapty: 7b0d95d78b86df348dd9c488c6955624f671e53a
+
+PODFILE CHECKSUM: 011ec4dbcd6bb400374bc0c89c4df9ea64d5050d
+
+COCOAPODS: 1.11.3

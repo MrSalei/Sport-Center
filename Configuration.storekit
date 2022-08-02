@@ -1,0 +1,77 @@
+{
+  "identifier" : "30FC0512",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "3C108F98",
+      "localizations" : [
+
+      ],
+      "name" : "VIP",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "9.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "0B70A1A9",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "      Price:",
+              "displayName" : "VIP Monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "sports.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Monthly",
+          "subscriptionGroupID" : "3C108F98",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "99.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "A4D0CB6D",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "      Price:",
+              "displayName" : "VIP Annually",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "sports.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Yearly",
+          "subscriptionGroupID" : "3C108F98",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 2
+  }
+}
